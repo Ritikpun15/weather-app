@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <form action="" class="search-form">
+        <input
+          type="text"
+          name="city"
+          id="city-input"
+          placeholder="Enter city name here"
+        />
+        <button class="search" type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+      <div class="city">
+        <h2 class="city-name"></h2>
+        <span class="date">Tue, May 07 2024</span>
+      </div>
+      <div class="temperature-info">
+        <div class="description">
+          <span class="img"><img src="" alt="" height="100px"/></span>
+          <span class="weatherDescription"></span>
+        </div>
+        <div class="temperature">0°C</div>
+      </div>
+      <div class="additional-info">
+        <div class="wind-info box">
+          <i class="fa-solid fa-wind icons"></i>
+          <div class="gap">
+            <h2 class="wind-speed">0 km/h</h2>
+            <p class="wind-label">Wind</p>
+          </div>
+        </div>
+        <div class="humidity-info box">
+          <i class="fa-solid fa-droplet icons"></i>
+          <div class="gap">
+            <h2 class="humidity-level">0%</h2>
+            <p class="humidity">Humidity</p>
+          </div>
+        </div>
+        <div class="visibillity-info box">
+          <i class="fa-solid fa-eye icons"></i>
+          <div class="gap">
+            <h2 class="Visibillity-distance">0 km</h2>
+            <p class="Visibillity">Visibillity</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
